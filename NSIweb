@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>JS Bin</title>
+</head>
+<body>
+<P>Vous êtes : <INPUT type="radio" name="sex" value="H" id="h"> un Homme <INPUT type="radio" name="sex" value="F" id="f"> une Femme
+<div>
+<input type="checkbox" id="scales" name="scales">
+<label for="Choix 1">Pommes</label>
+</div>
+<div>
+<input type="checkbox" id="horns" name="horns">
+<label for="Choix 2">Poires</label>
+</div>
+<input type="checkbox" id="claws" name="claws">
+<label for="Choix 3">Fraises</label>
+</div>
 
+
+
+</fieldset>
+<form action="" method="get"class="form-example">
+<div class="form-example">
+<label for="name">Vous vous appelez : </label>
+<input type="text" name="name" id="name" required>
+</div>
+
+
+
+<label for="name-select">Prénom:</label>
+<script type="text/javascript">
+function getValues(){
+var div = document.createElement("div");
+div.setAttribute("id", "res");
+
+
+
+if(document.querySelector('#f').checked){
+var sexe = document.querySelector('#f').value
+console.log(sex);
+}else if(document.querySelector('#h').checked){
+var sexe = document.querySelector('#h').value;
+console.log(sex);
+}
+
+}
+</script>
+<select id="name-select">
+<option value="">--Choisir un prénom--</option>
+<option>Paul</option>
+<option>Pierre</option>
+</select>
+  <br>
+  <button onclick="getValues()">afficher valeurs</button>
+</body>
+</html>
